@@ -8,7 +8,7 @@
 
 ### CARTHAGE
 
-* Add ```github "soh335/GetBSDProcessList"``` to your Cartfile.
+* Add ```github "soh335/GetBSDProcessList" "master"``` to your Cartfile.
 * Run ```carthage update```.
 * Add GetBSDProcessList.framework to Embedded Binaries.
 
