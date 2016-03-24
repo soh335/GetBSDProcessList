@@ -8,12 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		A46B2FE51CA3AA3C0059CD28 /* GetBSDProcessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B2FE41CA3AA3C0059CD28 /* GetBSDProcessList.swift */; };
+		A46B30021CA408B00059CD28 /* GetBSDProcessListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46B30011CA408B00059CD28 /* GetBSDProcessListTests.swift */; };
+		A46B30041CA408B00059CD28 /* GetBSDProcessList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46B2FD91CA3AA160059CD28 /* GetBSDProcessList.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A46B30051CA408B00059CD28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A46B2FD01CA3AA160059CD28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A46B2FD81CA3AA160059CD28;
+			remoteInfo = GetBSDProcessList;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A46B2FD91CA3AA160059CD28 /* GetBSDProcessList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GetBSDProcessList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46B2FDE1CA3AA160059CD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A46B2FE41CA3AA3C0059CD28 /* GetBSDProcessList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBSDProcessList.swift; sourceTree = "<group>"; };
+		A46B2FFF1CA408B00059CD28 /* GetBSDProcessListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetBSDProcessListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46B30011CA408B00059CD28 /* GetBSDProcessListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBSDProcessListTests.swift; sourceTree = "<group>"; };
+		A46B30031CA408B00059CD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +39,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A46B2FFC1CA408B00059CD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46B30041CA408B00059CD28 /* GetBSDProcessList.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				A46B2FDB1CA3AA160059CD28 /* GetBSDProcessList */,
+				A46B30001CA408B00059CD28 /* GetBSDProcessListTests */,
 				A46B2FDA1CA3AA160059CD28 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A46B2FD91CA3AA160059CD28 /* GetBSDProcessList.framework */,
+				A46B2FFF1CA408B00059CD28 /* GetBSDProcessListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +75,15 @@
 				A46B2FE41CA3AA3C0059CD28 /* GetBSDProcessList.swift */,
 			);
 			path = GetBSDProcessList;
+			sourceTree = "<group>";
+		};
+		A46B30001CA408B00059CD28 /* GetBSDProcessListTests */ = {
+			isa = PBXGroup;
+			children = (
+				A46B30011CA408B00059CD28 /* GetBSDProcessListTests.swift */,
+				A46B30031CA408B00059CD28 /* Info.plist */,
+			);
+			path = GetBSDProcessListTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,15 +117,37 @@
 			productReference = A46B2FD91CA3AA160059CD28 /* GetBSDProcessList.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		A46B2FFE1CA408B00059CD28 /* GetBSDProcessListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46B30091CA408B00059CD28 /* Build configuration list for PBXNativeTarget "GetBSDProcessListTests" */;
+			buildPhases = (
+				A46B2FFB1CA408B00059CD28 /* Sources */,
+				A46B2FFC1CA408B00059CD28 /* Frameworks */,
+				A46B2FFD1CA408B00059CD28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A46B30061CA408B00059CD28 /* PBXTargetDependency */,
+			);
+			name = GetBSDProcessListTests;
+			productName = GetBSDProcessListTests;
+			productReference = A46B2FFF1CA408B00059CD28 /* GetBSDProcessListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A46B2FD01CA3AA160059CD28 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				TargetAttributes = {
 					A46B2FD81CA3AA160059CD28 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A46B2FFE1CA408B00059CD28 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -109,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				A46B2FD81CA3AA160059CD28 /* GetBSDProcessList */,
+				A46B2FFE1CA408B00059CD28 /* GetBSDProcessListTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A46B2FD71CA3AA160059CD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46B2FFD1CA408B00059CD28 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,7 +196,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A46B2FFB1CA408B00059CD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46B30021CA408B00059CD28 /* GetBSDProcessListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A46B30061CA408B00059CD28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A46B2FD81CA3AA160059CD28 /* GetBSDProcessList */;
+			targetProxy = A46B30051CA408B00059CD28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A46B2FDF1CA3AA160059CD28 /* Debug */ = {
@@ -264,6 +344,28 @@
 			};
 			name = Release;
 		};
+		A46B30071CA408B00059CD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetBSDProcessListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.soh335.GetBSDProcessListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A46B30081CA408B00059CD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GetBSDProcessListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.soh335.GetBSDProcessListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +383,15 @@
 			buildConfigurations = (
 				A46B2FE21CA3AA160059CD28 /* Debug */,
 				A46B2FE31CA3AA160059CD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46B30091CA408B00059CD28 /* Build configuration list for PBXNativeTarget "GetBSDProcessListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46B30071CA408B00059CD28 /* Debug */,
+				A46B30081CA408B00059CD28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
