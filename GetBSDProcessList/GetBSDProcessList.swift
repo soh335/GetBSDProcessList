@@ -3,14 +3,15 @@ import Darwin
 
 public func GetBSDProcessList() -> ([kinfo_proc]?)  {
 
-    let name = [CTL_KERN, KERN_PROC, KERN_PROC_ALL, 0];
-    let namePointer = name.withUnsafeBufferPointer { UnsafeMutablePointer<Int32>($0.baseAddress) }
-    var length: Int = 0
     var done = false
     var result: [kinfo_proc]?
     var err: Int32
 
     repeat {
+        let name = [CTL_KERN, KERN_PROC, KERN_PROC_ALL, 0];
+        let namePointer = name.withUnsafeBufferPointer { UnsafeMutablePointer<Int32>($0.baseAddress) }
+        var length: Int = 0
+        
         err = sysctl(namePointer, u_int(name.count), nil, &length, nil, 0)
         if err == -1 {
             err = errno
