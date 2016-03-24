@@ -9,7 +9,7 @@ before_install:
   - brew update
 
 script:
-  - xcodebuild test -scheme GetBSDProcessList -configuration Release
+  - xcodebuild test -scheme GetBSDProcessList -configuration Release | xcpretty -c
   - carthage build --no-skip-current
 
 notifications:
