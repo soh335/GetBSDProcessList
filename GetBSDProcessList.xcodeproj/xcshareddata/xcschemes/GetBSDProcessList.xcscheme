@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A46B2FFE1CA408B00059CD28"
+               BuildableName = "GetBSDProcessListTests.xctest"
+               BlueprintName = "GetBSDProcessListTests"
+               ReferencedContainer = "container:GetBSDProcessList.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A46B2FD81CA3AA160059CD28"
+            BuildableName = "GetBSDProcessList.framework"
+            BlueprintName = "GetBSDProcessList"
+            ReferencedContainer = "container:GetBSDProcessList.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
